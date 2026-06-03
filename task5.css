@@ -1,0 +1,26 @@
+body{
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: bold;
+    color: darkblue;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+h2{
+    font-family: Arial;
+    font-size: 30px;
+    font-style: italic;
+    color: green;
+}
+p{
+    font-family: Verdana;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    color: brown;
+}

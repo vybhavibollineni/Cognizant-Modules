@@ -1,0 +1,52 @@
+body{
+    background-color: lightgray;
+    font-family: Arial;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+h1{
+    color: darkblue;
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+.menu{
+    list-style-type: none;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    font-size: 30px;
+}
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: green;
+}
+a:visited{
+    color: purple;
+}
+h2{
+    color: darkblue;
+    font-size: 50px;
+    margin-top: 40px;
+}
+.events{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    list-style-type: square;
+    list-style-position: inside;
+}
+.events li{
+    font-size: 30px;
+    margin: 20px;
+}
