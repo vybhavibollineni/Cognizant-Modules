@@ -1,18 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Community Event Portal</title>
+</head>
+<body>
+    <h1>Community Event Portal</h1>
 
-<h2>Event Promo Video</h2>
-<video width="400"
-       controls
-       oncanplay="videoMessage()">
-    <source src="event vedio.mp4"
-            type="video/mp4">
-</video>
-<br><br>
-<p id="videoText"></p>
-<script>
-    function videoMessage() {
-        document.getElementById("videoText").innerHTML ="Video ready to play";
-    }
-    window.onbeforeunload = function () {
-        return "Are you sure you want to leave this page?";
-    };
-</script>
+    <div id="eventContainer"></div>
+
+    <script src="task7.js"></script>
+</body>
+</html>

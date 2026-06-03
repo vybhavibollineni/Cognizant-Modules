@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Debug and Test</title>
-    <link rel="stylesheet" href="task11.css">
+    <title>Event Registration</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Community Event Portal</h1>
-        <p>
-            Test this page using Chrome DevTools.
-        </p>
-        <button>Click Here</button>
-    </div>
+
+<h2>Event Registration Form</h2>
+
+<form id="registerForm">
+    <input type="text" name="name" placeholder="Enter Name">
+    <span id="nameError"></span>
+    <br><br>
+
+    <input type="email" name="email" placeholder="Enter Email">
+    <span id="emailError"></span>
+    <br><br>
+
+    <select name="event">
+        <option value="">Select Event</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Seminar">Seminar</option>
+        <option value="Hackathon">Hackathon</option>
+    </select>
+    <span id="eventError"></span>
+    <br><br>
+
+    <button type="submit">Register</button>
+</form>
+
+<script src="task11.js"></script>
+
 </body>
 </html>
