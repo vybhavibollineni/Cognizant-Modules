@@ -1,0 +1,42 @@
+<h2>Saving User Preferences</h2>
+<select id="eventType">
+    <option value="">
+        Select Event
+    </option>
+    <option>
+        Music Festival
+    </option>
+    <option>
+        Sports Meet
+    </option>
+    <option>
+        Art Exhibition
+    </option>
+</select>
+<br><br>
+<button onclick="saveData()" style="background-color:green; padding:10px; color:white; border:none;">
+    Save
+</button>
+<button onclick="clearData()" style="background-color:rgb(235, 48, 10); padding:10px; color:white; border:none;">
+    Clear
+</button>
+<br><br>
+<p id="message"></p>
+<script>
+    window.onload = function () {
+        document.body.style.backgroundColor = "lightblue";
+        let eventName =localStorage.getItem("event");
+        document.getElementById("eventType").value =eventName;
+    }
+    function saveData() {
+        let selectedEvent =document.getElementById("eventType").value;
+        localStorage.setItem("event",selectedEvent);
+        document.getElementById("message").innerHTML = "Preference Saved";
+    }
+    function clearData() {
+        localStorage.clear();
+        sessionStorage.clear();
+        document.getElementById("eventType").value = "";
+        document.getElementById("message").innerHTML = "Preference Cleared";
+    }
+</script>

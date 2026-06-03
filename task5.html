@@ -1,0 +1,141 @@
+<h2>Community Event Gallery</h2>
+<table border="1">
+    <tr>
+        <td>
+            <img src="music.jpg"
+                 alt="Music Event"
+                 title="Music Event"
+                 class="galleryImage">
+
+            <p>Music Festival</p>
+        </td>
+        <td>
+            <img src="food.jpg"
+                 alt="Food Event"
+                 title="Food Event"
+                 class="galleryImage">
+            <p>Food Carnival</p>
+        </td>
+        <td>
+            <img src="games.jpg"
+                 alt="Games Event"
+                 title="Games Event"
+                 class="galleryImage">
+            <p>Games Tournament</p>
+
+        </td>
+
+    </tr>
+
+    <tr>
+
+        <td>
+
+            <img src="dance.jpg"
+                 alt="Dance Event"
+                 title="Dance Event"
+                 class="galleryImage">
+
+            <p>Dance Program</p>
+        </td>
+        <td>
+            <img src="other culturals.jpg"
+                 alt="Other Culturals"
+                 title="Other Culturals"
+                 class="galleryImage">
+            <p>Other Culturals</p>
+        </td>
+        <td>
+            <img src="community meetings.jpg"
+                 alt="Community Meeting"
+                 title="Community Meeting"
+                 class="galleryImage">
+
+            <p>Community Meeting</p>
+        </td>
+    </tr>
+</table>
+<style>
+    .galleryImage {
+
+        border: 3px solid black;
+        width: 200px;
+        height: 120px;
+
+    }
+</style>
+<h2>Event Registration Form</h2>
+<form onsubmit="showMessage(); return false;">
+    <label>Name:</label>
+    <input type="text"
+           placeholder="Enter your name"
+           required
+           autofocus>
+    <label>Email:</label>
+    <input type="email"
+           placeholder="Enter your email"
+           required>
+    <label>Event Date:</label>
+    <input type="date"
+           required>
+    <label>Event Type:</label>
+    <select required>
+        <option value="">
+            Select Event
+        </option>
+
+        <option>
+            Music Festival
+        </option>
+
+        <option>
+            Games Tournament
+        </option>
+
+        <option>
+            Dance Program
+        </option>
+        <option>
+            Other Culturals
+        </option>
+    </select>
+    <label>Message:</label>
+    <textarea placeholder="Enter your message">
+    </textarea>
+    <br>
+    <button type="submit">
+        Register
+    </button>
+    <br><br>
+    <output id="result"></output>
+</form>
+<style>
+    form {
+
+        background-color: lightgray;
+        padding: 20px;
+        width: 400px;
+    }
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    button {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        border: none;
+    }
+</style>
+<script>
+    function showMessage() {
+
+        document.getElementById("result").innerHTML =
+
+            "Registration Submitted Successfully!";
+    }
+</script>

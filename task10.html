@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 10</title>
+</head>
+<body>
+    <h2>Debugging with Chrome DevTools</h2>
+    <button onclick="showMessage()" style="background-color:green; padding:10px; color:white; border:none;">
+        Click Here
+    </button>
+    <p id="demo"></p>
+    <script>
+        function showMessage() {
+            let message = "Debugging Successful";
+            console.log(message);
+            document.getElementById("demo").innerHTML=message;
+        }
+    </script>
+</body>
+</html>
